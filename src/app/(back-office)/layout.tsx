@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "@/components/frontend/Sidebar";
 
 export default function layout({
   children,
@@ -8,9 +9,9 @@ export default function layout({
   return (
     <div className="flex">
       {/* Sidebar */}
-      <div className="">Sidebar</div>
+      <Sidebar />
       {/* Main Body */}
-      <div className="">
+      <div className="w-full">
         {/* Header */}
         <h2>Nav Bar</h2>
         {/* Main */}
