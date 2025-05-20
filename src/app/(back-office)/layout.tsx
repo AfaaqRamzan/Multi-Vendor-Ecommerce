@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "@/components/frontend/Sidebar";
+import Navbar from "@/components/frontend/Navbar";
 
 export default function layout({
   children,
@@ -13,7 +14,7 @@ export default function layout({
       {/* Main Body */}
       <div className="w-full">
         {/* Header */}
-        <h2>Nav Bar</h2>
+        <Navbar />
         {/* Main */}
         <main>{children}</main>
       </div>
