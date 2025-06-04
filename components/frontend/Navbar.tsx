@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Sidebar() {
   return (
-    <div className="flex items-center justify-between bg-slate-800 text-slate-50">
+    <div className="fixed top-0 flex h-16 w-full items-center justify-between bg-slate-800 px-8 py-4 text-slate-50">
       {/* Icon */}
       <button>
         <AlignJustify />
