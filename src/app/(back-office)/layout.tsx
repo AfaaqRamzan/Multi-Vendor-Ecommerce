@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "@/components/frontend/Sidebar";
-import Navbar from "@/components/frontend/Navbar";
+import Sidebar from "@/components/backoffice/Sidebar";
+import Navbar from "@/components/backoffice/Navbar";
 
 export default function layout({
   children,

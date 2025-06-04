@@ -1,5 +1,10 @@
+import Heading from "@/components/backoffice/Heading";
 import React from "react";
 
 export default function Dashboard() {
-  return <div>Dashboard</div>;
+  return (
+    <div>
+      <Heading title="Dashboard Overview" />
+    </div>
+  );
 }
