@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className="bg-light text-light dark:bg-dark dark:text-dark">
       <Heading title="Dashboard Overview" />
       {/* Large Cards */}
       <LargeCards />

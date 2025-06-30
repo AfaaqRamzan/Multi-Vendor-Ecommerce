@@ -16,8 +16,10 @@ function CustomDataTable() {
   const itemEndIndex = Math.min(startIndex + PAGE_SIZE, data.length);
 
   return (
-    <div>
-      <h2 className="mt-4 text-xl font-bold">Data Table</h2>
+    <div className="mt-8">
+      <h2 className="mb-4 px-4 text-xl font-bold text-slate-800 dark:text-slate-50">
+        Recent Orders
+      </h2>
 
       <div className="p-8">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">

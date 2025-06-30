@@ -1,13 +1,4 @@
-import {
-  AlignJustify,
-  Bell,
-  Layout,
-  LogOut,
-  Settings,
-  Sun,
-  User,
-  X,
-} from "lucide-react";
+import { AlignJustify, Bell, Layout, LogOut, Settings, X } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -20,15 +11,17 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 flex h-16 w-full items-center justify-between bg-slate-800 px-8 py-4 pr-[20rem] text-slate-50">
+    <div className="fixed top-0 z-50 flex h-20 w-full items-center justify-between bg-white px-8 py-8 pr-[20rem] text-slate-50 dark:bg-slate-800">
       {/* Icon */}
-      <button>
+      <button className="text-lime-700 dark:text-lime-500">
         <AlignJustify />
       </button>
       <div className="flex space-x-3">
+        <ThemeToggle />
         <button>
           <DropdownMenu>
             <DropdownMenuTrigger>
@@ -36,7 +29,7 @@ export default function Navbar() {
                 type="button"
                 className="relative inline-flex items-center rounded-lg bg-transparent p-3 text-center text-sm font-medium text-white focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800"
               >
-                <Bell />
+                <Bell className="text-lime-700 dark:text-lime-500" />
                 <span className="sr-only">Notifications</span>
                 <div className="absolute end-1 -top-1 inline-flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-red-500 text-xs font-bold text-white dark:border-gray-900">
                   20

@@ -12,11 +12,11 @@ export default function layout({
       {/* Sidebar */}
       <Sidebar />
       {/* Main Body */}
-      <div className="ml-60 w-full">
+      <div className="ml-0 min-h-screen flex-grow bg-slate-100 lg:ml-60">
         {/* Header */}
         <Navbar />
         {/* Main */}
-        <main className="mt-16 min-h-screen bg-slate-900 p-8 text-slate-50">
+        <main className="mt-16 bg-slate-100 p-8 text-slate-50 dark:bg-slate-900">
           {children}
         </main>
       </div>

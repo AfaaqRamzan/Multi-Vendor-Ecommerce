@@ -88,8 +88,10 @@ function WeeklySalesChart() {
 
   const [chartToDisplay, setChartToDisplay] = useState(tabs[0].type);
   return (
-    <div className="rounded-lg bg-slate-700 p-8">
-      <h2 className="mb-4 text-xl font-bold">Weekly Sales Chart</h2>
+    <div className="rounded-lg bg-slate-50 p-8 shadow-xl dark:bg-slate-700">
+      <h2 className="mb-4 text-xl font-bold text-slate-800 dark:text-slate-50">
+        Weekly Sales Chart
+      </h2>
 
       {/*    Charts */}
       <div className="p-4">
@@ -103,8 +105,8 @@ function WeeklySalesChart() {
                     onClick={() => setChartToDisplay(tab.type)}
                     className={
                       chartToDisplay == tab.type
-                        ? "active inline-block rounded-t-lg border-b-2 border-orange-600 p-4 text-orange-600 dark:border-orange-500 dark:text-orange-500 dark:hover:text-gray-300"
-                        : "inline-block rounded-t-lg border-b-2 border-transparent p-4 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+                        ? "active inline-block rounded-t-lg border-b-2 border-orange-600 p-4 text-orange-600 dark:border-orange-500 dark:text-orange-500"
+                        : "inline-block rounded-t-lg border-b-2 border-transparent p-4 text-gray-800 hover:border-gray-100 hover:text-gray-700 dark:hover:text-gray-100"
                     }
                   >
                     {tab.title}

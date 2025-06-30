@@ -13,12 +13,12 @@ interface SmallCardProps {
 function SmallCard({ data }: SmallCardProps) {
   const { title, numbers, iconBg, icon: Icon } = data;
   return (
-    <div className="rounded-lg bg-slate-700 p-4 shadow-lg">
+    <div className="rounded-lg bg-slate-50 p-4 text-slate-800 shadow-lg dark:bg-slate-700 dark:text-slate-50">
       <div className="flex space-x-4">
         <div
           className={`h-12 w-12 ${iconBg} flex items-center justify-center rounded-full`}
         >
-          <Icon />
+          <Icon className="text-slate-50 dark:text-slate-50" />
         </div>
 
         <div>

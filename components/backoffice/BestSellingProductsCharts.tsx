@@ -30,8 +30,10 @@ function BestSellingProductsCharts() {
     ],
   };
   return (
-    <div className="rounded-lg bg-slate-700 p-8">
-      <h2 className="mb-4 text-xl font-bold">Best Selling Charts</h2>
+    <div className="rounded-lg bg-slate-50 p-8 shadow-xl dark:bg-slate-700">
+      <h2 className="mb-4 text-xl font-bold text-slate-800 dark:text-slate-50">
+        Best Selling Charts
+      </h2>
 
       {/*    Charts */}
       <div className="p-4">
